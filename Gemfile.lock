@@ -75,19 +75,13 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    addressable (2.8.8)
-      public_suffix (>= 2.0.2, < 8.0)
     ast (2.4.3)
-    babel-source (5.8.35)
-    babel-transpiler (0.7.0)
-      babel-source (>= 4.0, < 6)
-      execjs (~> 2.0)
     base64 (0.3.0)
     bcrypt_pbkdf (1.1.2)
     bigdecimal (4.0.1)
     bootsnap (1.21.1)
       msgpack (~> 1.2)
-    brakeman (7.1.2)
+    brakeman (8.0.1)
       racc
     builder (3.3.0)
     bundler-audit (0.9.3)
@@ -96,7 +90,6 @@ GEM
     concurrent-ruby (1.3.6)
     connection_pool (3.0.2)
     crass (1.0.6)
-    csv (3.3.5)
     date (3.5.1)
     debug (1.11.1)
       irb (~> 1.10)
@@ -106,11 +99,8 @@ GEM
     ed25519 (1.4.0)
     erb (6.0.1)
     erubi (1.13.1)
-    esbuild-rails (0.1.4)
-      rails (>= 6.0.0)
     et-orbi (1.4.0)
       tzinfo
-    execjs (2.10.0)
     ffi (1.17.3-x64-mingw-ucrt)
     ffi (1.17.3-x86_64-linux-gnu)
     fugit (1.12.1)
@@ -118,11 +108,6 @@ GEM
       raabro (~> 1.4)
     globalid (1.3.0)
       activesupport (>= 6.1)
-    hash_diff (1.1.1)
-    httparty (0.24.2)
-      csv
-      mini_mime (>= 1.0.0)
-      multi_xml (>= 0.5.2)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     image_processing (1.14.0)
@@ -134,8 +119,6 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.18.0)
-    jwt (3.1.2)
-      base64
     kamal (2.10.1)
       activesupport (>= 7.0)
       base64 (~> 0.2)
@@ -166,8 +149,6 @@ GEM
     minitest (6.0.1)
       prism (~> 1.5)
     msgpack (1.8.0)
-    multi_xml (0.8.1)
-      bigdecimal (>= 3.1, < 5)
     net-imap (0.6.2)
       date
       net-protocol
@@ -187,10 +168,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-gnu)
       racc (~> 1.4)
-    oj (3.16.13)
-      bigdecimal (>= 3.0)
-      ostruct (>= 0.2)
-    openssl (4.0.0)
     ostruct (0.6.3)
     parallel (1.27.0)
     parser (3.3.10.1)
@@ -205,7 +182,6 @@ GEM
     psych (5.3.1)
       date
       stringio
-    public_suffix (7.0.2)
     puma (7.1.0)
       nio4r (~> 2.0)
     raabro (1.4.0)
@@ -254,14 +230,6 @@ GEM
       erb
       psych (>= 4.0.0)
       tsort
-    react-rails (3.2.1)
-      babel-transpiler (>= 0.7.0)
-      connection_pool
-      execjs
-      railties (>= 3.2)
-      tilt
-    redirect_safely (1.0.0)
-      activemodel
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
@@ -298,23 +266,6 @@ GEM
       ffi (~> 1.12)
       logger
     securerandom (0.4.1)
-    shopify_api (16.1.0)
-      activesupport
-      concurrent-ruby
-      hash_diff
-      httparty
-      jwt
-      oj
-      openssl
-      securerandom
-      sorbet-runtime
-      zeitwerk (~> 2.5)
-    shopify_app (23.0.1)
-      addressable (~> 2.7)
-      rails (>= 7.1, < 9)
-      redirect_safely (~> 1.0)
-      shopify_api (~> 16.0)
-      sprockets-rails
     solid_cable (3.0.12)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -331,15 +282,6 @@ GEM
       fugit (~> 1.11)
       railties (>= 7.1)
       thor (>= 1.3.1)
-    sorbet-runtime (0.6.12889)
-    sprockets (4.2.2)
-      concurrent-ruby (~> 1.0)
-      logger
-      rack (>= 2.2.4, < 4)
-    sprockets-rails (3.5.2)
-      actionpack (>= 6.1)
-      activesupport (>= 6.1)
-      sprockets (>= 3.0.0)
     sshkit (1.25.0)
       base64
       logger
@@ -351,7 +293,6 @@ GEM
     thor (1.5.0)
     thruster (0.1.17)
     thruster (0.1.17-x86_64-linux)
-    tilt (2.7.0)
     timeout (0.6.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
@@ -378,16 +319,12 @@ DEPENDENCIES
   brakeman
   bundler-audit
   debug
-  esbuild-rails
   image_processing (~> 1.2)
   kamal
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 8.1.2)
-  react-rails
   rubocop-rails-omakase
-  shopify_api
-  shopify_app
   solid_cable
   solid_cache
   solid_queue
